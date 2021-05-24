@@ -1,0 +1,12 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer).
+  Building CrazyKartsEditor...
+  Using Visual Studio 2019 14.28.29915 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 4 actions with 16 processes...
+    [1/4] GoKart.cpp
+    [2/4] UE4Editor-CrazyKarts-0022.lib
+       Creando biblioteca D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\UE4Editor-CrazyKarts-0022.lib y objeto D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\UE4Editor-CrazyKarts-0022.exp
+    [3/4] UE4Editor-CrazyKarts-0022.dll
+       Creando biblioteca D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\UE4Editor-CrazyKarts-0022.suppressed.lib y objeto D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\UE4Editor-CrazyKarts-0022.suppressed.exp
+    [4/4] CrazyKartsEditor.target
+  Total time in Parallel executor: 95.96 seconds
+  Total execution time: 96.51 seconds

@@ -1,0 +1,2 @@
+D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\Definitions.CrazyKarts.h
+D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Source\CrazyKarts\CrazyKarts.h
