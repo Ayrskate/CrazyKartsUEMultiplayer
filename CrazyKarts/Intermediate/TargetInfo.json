@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "CrazyKarts",
-			"Path": "D:\\UECrazyKarts\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKarts.Target.cs",
+			"Path": "C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKarts.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "CrazyKartsEditor",
-			"Path": "D:\\UECrazyKarts\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKartsEditor.Target.cs",
+			"Path": "C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKartsEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

@@ -230,8 +230,8 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Inc\CrazyKarts
-/I D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Source
+/I D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Inc\CrazyKarts
+/I D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Source
 /I ..\Plugins\Runtime\PhysXVehicles\Intermediate\Build\Win64\UE4Editor\Inc\PhysXVehicles
 /I ..\Plugins\Runtime\PhysXVehicles\Source
 /I ..\Plugins\Runtime\PhysXVehicles\Source\PhysXVehicles\Public
@@ -271,12 +271,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Source\CrazyKarts\CrazyKartsWheelRear.cpp"
-/FI"D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\Definitions.CrazyKarts.h"
-/Fo"D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\CrazyKartsWheelRear.cpp.obj"
+/FI"D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Source\CrazyKarts\CrazyKartsWheelRear.cpp"
+/FI"D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\Definitions.CrazyKarts.h"
+/Fo"D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\CrazyKartsWheelRear.cpp.obj"
 /TP
 /GR-
 /W4

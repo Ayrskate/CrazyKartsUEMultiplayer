@@ -259,11 +259,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/I D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine
-/Yc"D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
-/Fo"D:\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+/I D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine
+/Yc"D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
+/Fo"D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\CrazyKartsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
 /TP
 /GR-
 /W4

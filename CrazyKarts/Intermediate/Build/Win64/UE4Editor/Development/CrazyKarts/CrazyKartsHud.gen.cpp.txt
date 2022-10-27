@@ -1,10 +1,10 @@
-D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\Definitions.CrazyKarts.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Source\CrazyKarts/CrazyKartsHud.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
-D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Inc\CrazyKarts\CrazyKartsHud.generated.h
+C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\Definitions.CrazyKarts.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyKarts\Source\CrazyKarts/CrazyKartsHud.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
+C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
+C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Inc\CrazyKarts\CrazyKartsHud.generated.h

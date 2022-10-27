@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.26",
+	"EngineAssociation": "4.27",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -21,6 +21,15 @@
 		{
 			"Name": "RawInput",
 			"Enabled": true
+		},
+		{
+			"Name": "SteamVR",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win32",
+				"Win64",
+				"Linux"
+			]
 		}
 	]
 }

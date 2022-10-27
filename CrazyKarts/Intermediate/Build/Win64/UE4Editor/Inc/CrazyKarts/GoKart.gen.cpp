@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeGoKart() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGoKart_Statics::NewProp_Mass_MetaData[] = {
 		{ "Category", "Kart Parameters" },
-		{ "Comment", "//Kg\n" },
+		{ "Comment", "// Kg\n" },
 		{ "ModuleRelativePath", "GoKart.h" },
 		{ "ToolTip", "Kg" },
 	};
@@ -82,7 +82,9 @@ void EmptyLinkFunctionForGeneratedCodeGoKart() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGoKart_Statics::NewProp_MaxDrivingForce_MetaData[] = {
 		{ "Category", "Kart Parameters" },
+		{ "Comment", "// Newtons\n" },
 		{ "ModuleRelativePath", "GoKart.h" },
+		{ "ToolTip", "Newtons" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AGoKart_Statics::NewProp_MaxDrivingForce = { "MaxDrivingForce", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGoKart, MaxDrivingForce), METADATA_PARAMS(Z_Construct_UClass_AGoKart_Statics::NewProp_MaxDrivingForce_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGoKart_Statics::NewProp_MaxDrivingForce_MetaData)) };
@@ -126,7 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeGoKart() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGoKart, 4135542404);
+	IMPLEMENT_CLASS(AGoKart, 1413256236);
 	template<> CRAZYKARTS_API UClass* StaticClass<AGoKart>()
 	{
 		return AGoKart::StaticClass();

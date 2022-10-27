@@ -39,7 +39,7 @@ public: \
 	CRAZYKARTS_API ACrazyKartsGameMode(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACrazyKartsGameMode) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(CRAZYKARTS_API, ACrazyKartsGameMode); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACrazyKartsGameMode); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACrazyKartsGameMode); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	CRAZYKARTS_API ACrazyKartsGameMode(ACrazyKartsGameMode&&); \
@@ -54,7 +54,7 @@ private: \
 	CRAZYKARTS_API ACrazyKartsGameMode(const ACrazyKartsGameMode&); \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(CRAZYKARTS_API, ACrazyKartsGameMode); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACrazyKartsGameMode); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACrazyKartsGameMode); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACrazyKartsGameMode)
 
 

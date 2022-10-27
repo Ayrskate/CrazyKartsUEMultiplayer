@@ -39,7 +39,7 @@ public: \
 	NO_API ACrazyKartsHud(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACrazyKartsHud) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ACrazyKartsHud); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACrazyKartsHud); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACrazyKartsHud); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ACrazyKartsHud(ACrazyKartsHud&&); \
@@ -54,7 +54,7 @@ private: \
 	NO_API ACrazyKartsHud(const ACrazyKartsHud&); \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ACrazyKartsHud); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACrazyKartsHud); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACrazyKartsHud); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACrazyKartsHud)
 
 

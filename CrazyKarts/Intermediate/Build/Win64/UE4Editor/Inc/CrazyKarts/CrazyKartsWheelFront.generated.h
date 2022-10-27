@@ -39,7 +39,7 @@ public: \
 	NO_API UCrazyKartsWheelFront(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UCrazyKartsWheelFront) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UCrazyKartsWheelFront); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UCrazyKartsWheelFront); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UCrazyKartsWheelFront); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UCrazyKartsWheelFront(UCrazyKartsWheelFront&&); \
@@ -54,7 +54,7 @@ private: \
 	NO_API UCrazyKartsWheelFront(const UCrazyKartsWheelFront&); \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UCrazyKartsWheelFront); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UCrazyKartsWheelFront); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UCrazyKartsWheelFront); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UCrazyKartsWheelFront)
 
 

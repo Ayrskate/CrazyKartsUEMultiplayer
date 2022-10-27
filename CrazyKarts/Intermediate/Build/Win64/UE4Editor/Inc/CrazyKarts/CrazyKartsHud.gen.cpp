@@ -90,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeCrazyKartsHud() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACrazyKartsHud, 3570928803);
+	IMPLEMENT_CLASS(ACrazyKartsHud, 1496880890);
 	template<> CRAZYKARTS_API UClass* StaticClass<ACrazyKartsHud>()
 	{
 		return ACrazyKartsHud::StaticClass();

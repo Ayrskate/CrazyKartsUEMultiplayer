@@ -39,7 +39,7 @@ public: \
 	NO_API ACrazyKartsPawn(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACrazyKartsPawn) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ACrazyKartsPawn); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACrazyKartsPawn); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACrazyKartsPawn); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ACrazyKartsPawn(ACrazyKartsPawn&&); \
@@ -54,7 +54,7 @@ private: \
 	NO_API ACrazyKartsPawn(const ACrazyKartsPawn&); \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ACrazyKartsPawn); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACrazyKartsPawn); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACrazyKartsPawn); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACrazyKartsPawn)
 
 

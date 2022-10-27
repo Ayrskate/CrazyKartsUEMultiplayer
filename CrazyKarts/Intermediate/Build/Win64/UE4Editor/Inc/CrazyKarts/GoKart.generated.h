@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define CRAZYKARTS_GoKart_generated_h
 
-#define CrazyKarts_Source_CrazyKarts_GoKart_h_12_SPARSE_DATA
-#define CrazyKarts_Source_CrazyKarts_GoKart_h_12_RPC_WRAPPERS
-#define CrazyKarts_Source_CrazyKarts_GoKart_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define CrazyKarts_Source_CrazyKarts_GoKart_h_12_INCLASS_NO_PURE_DECLS \
+#define CrazyKarts_Source_CrazyKarts_GoKart_h_9_SPARSE_DATA
+#define CrazyKarts_Source_CrazyKarts_GoKart_h_9_RPC_WRAPPERS
+#define CrazyKarts_Source_CrazyKarts_GoKart_h_9_RPC_WRAPPERS_NO_PURE_DECLS
+#define CrazyKarts_Source_CrazyKarts_GoKart_h_9_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGoKart(); \
 	friend struct Z_Construct_UClass_AGoKart_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AGoKart)
 
 
-#define CrazyKarts_Source_CrazyKarts_GoKart_h_12_INCLASS \
+#define CrazyKarts_Source_CrazyKarts_GoKart_h_9_INCLASS \
 private: \
 	static void StaticRegisterNativesAGoKart(); \
 	friend struct Z_Construct_UClass_AGoKart_Statics; \
@@ -34,12 +34,12 @@ public: \
 	DECLARE_SERIALIZER(AGoKart)
 
 
-#define CrazyKarts_Source_CrazyKarts_GoKart_h_12_STANDARD_CONSTRUCTORS \
+#define CrazyKarts_Source_CrazyKarts_GoKart_h_9_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AGoKart(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AGoKart) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AGoKart); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGoKart); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGoKart); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AGoKart(AGoKart&&); \
@@ -47,39 +47,39 @@ private: \
 public:
 
 
-#define CrazyKarts_Source_CrazyKarts_GoKart_h_12_ENHANCED_CONSTRUCTORS \
+#define CrazyKarts_Source_CrazyKarts_GoKart_h_9_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AGoKart(AGoKart&&); \
 	NO_API AGoKart(const AGoKart&); \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AGoKart); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGoKart); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGoKart); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AGoKart)
 
 
-#define CrazyKarts_Source_CrazyKarts_GoKart_h_12_PRIVATE_PROPERTY_OFFSET
-#define CrazyKarts_Source_CrazyKarts_GoKart_h_9_PROLOG
-#define CrazyKarts_Source_CrazyKarts_GoKart_h_12_GENERATED_BODY_LEGACY \
+#define CrazyKarts_Source_CrazyKarts_GoKart_h_9_PRIVATE_PROPERTY_OFFSET
+#define CrazyKarts_Source_CrazyKarts_GoKart_h_6_PROLOG
+#define CrazyKarts_Source_CrazyKarts_GoKart_h_9_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CrazyKarts_Source_CrazyKarts_GoKart_h_12_PRIVATE_PROPERTY_OFFSET \
-	CrazyKarts_Source_CrazyKarts_GoKart_h_12_SPARSE_DATA \
-	CrazyKarts_Source_CrazyKarts_GoKart_h_12_RPC_WRAPPERS \
-	CrazyKarts_Source_CrazyKarts_GoKart_h_12_INCLASS \
-	CrazyKarts_Source_CrazyKarts_GoKart_h_12_STANDARD_CONSTRUCTORS \
+	CrazyKarts_Source_CrazyKarts_GoKart_h_9_PRIVATE_PROPERTY_OFFSET \
+	CrazyKarts_Source_CrazyKarts_GoKart_h_9_SPARSE_DATA \
+	CrazyKarts_Source_CrazyKarts_GoKart_h_9_RPC_WRAPPERS \
+	CrazyKarts_Source_CrazyKarts_GoKart_h_9_INCLASS \
+	CrazyKarts_Source_CrazyKarts_GoKart_h_9_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define CrazyKarts_Source_CrazyKarts_GoKart_h_12_GENERATED_BODY \
+#define CrazyKarts_Source_CrazyKarts_GoKart_h_9_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CrazyKarts_Source_CrazyKarts_GoKart_h_12_PRIVATE_PROPERTY_OFFSET \
-	CrazyKarts_Source_CrazyKarts_GoKart_h_12_SPARSE_DATA \
-	CrazyKarts_Source_CrazyKarts_GoKart_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	CrazyKarts_Source_CrazyKarts_GoKart_h_12_INCLASS_NO_PURE_DECLS \
-	CrazyKarts_Source_CrazyKarts_GoKart_h_12_ENHANCED_CONSTRUCTORS \
+	CrazyKarts_Source_CrazyKarts_GoKart_h_9_PRIVATE_PROPERTY_OFFSET \
+	CrazyKarts_Source_CrazyKarts_GoKart_h_9_SPARSE_DATA \
+	CrazyKarts_Source_CrazyKarts_GoKart_h_9_RPC_WRAPPERS_NO_PURE_DECLS \
+	CrazyKarts_Source_CrazyKarts_GoKart_h_9_INCLASS_NO_PURE_DECLS \
+	CrazyKarts_Source_CrazyKarts_GoKart_h_9_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

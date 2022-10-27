@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <None Include="..\..\CrazyKarts.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{AB523701-0482-45BB-8279-2CC1143492BD}</UniqueIdentifier>
+      <UniqueIdentifier>{118E417B-E2CB-4DF9-9541-8BFDBBA8556F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CrazyKarts.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,9 @@
     <None Include="..\..\Source\CrazyKartsEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{15F0D608-EA58-420A-95EA-ACE989CCBD3E}</UniqueIdentifier>
+      <UniqueIdentifier>{2432BE61-37DE-43A7-877C-F86BB381BBFD}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +31,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\CrazyKarts">
-      <UniqueIdentifier>{A51DE5ED-D9A5-4B0A-AB58-B99646D96E07}</UniqueIdentifier>
+      <UniqueIdentifier>{EFC15184-A05C-4078-9A1D-DCEE1F86C36F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CrazyKarts\CrazyKarts.Build.cs">
       <Filter>Source\CrazyKarts</Filter>
@@ -75,6 +76,12 @@
       <Filter>Source\CrazyKarts</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\CrazyKarts\GoKart.h">
+      <Filter>Source\CrazyKarts</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CrazyKarts\KrazyKartPawn.cpp">
+      <Filter>Source\CrazyKarts</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CrazyKarts\KrazyKartPawn.h">
       <Filter>Source\CrazyKarts</Filter>
     </ClInclude>
   </ItemGroup>

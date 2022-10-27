@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\UdemyProjects\\UECrazyKarts\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKarts\\CrazyKarts.Build.cs",
-		"D:\\UdemyProjects\\UECrazyKarts\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKarts.Target.cs",
-		"D:\\UdemyProjects\\UECrazyKarts\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKartsEditor.Target.cs"
+		"C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKarts\\CrazyKarts.Build.cs",
+		"C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKarts.Target.cs",
+		"C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKartsEditor.Target.cs"
 	],
-	"EngineVersion": "4.26.2"
+	"EngineVersion": "4.27.2"
 }

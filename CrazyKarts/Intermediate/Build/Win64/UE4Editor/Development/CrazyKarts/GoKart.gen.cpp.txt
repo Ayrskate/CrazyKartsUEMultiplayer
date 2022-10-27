@@ -1,5 +1,5 @@
-D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\Definitions.CrazyKarts.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Source\CrazyKarts/GoKart.h
-D:\UdemyProjects\UECrazyKarts\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Inc\CrazyKarts\GoKart.generated.h
+C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Development\CrazyKarts\Definitions.CrazyKarts.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\EpicGames\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyKarts\Source\CrazyKarts/GoKart.h
+C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Inc\CrazyKarts\GoKart.generated.h

@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeCrazyKartsGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACrazyKartsGameMode, 2693527311);
+	IMPLEMENT_CLASS(ACrazyKartsGameMode, 2554597282);
 	template<> CRAZYKARTS_API UClass* StaticClass<ACrazyKartsGameMode>()
 	{
 		return ACrazyKartsGameMode::StaticClass();
