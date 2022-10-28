@@ -1,6 +1,12 @@
 {
 	"SourceFiles": [
 		"C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKarts\\CrazyKarts.Build.cs",
+		"C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Plugins\\Developer\\RiderLink\\Source\\RD\\RD.Build.cs",
+		"C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Plugins\\Developer\\RiderLink\\Source\\RiderBlueprint\\RiderBlueprint.Build.cs",
+		"C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Plugins\\Developer\\RiderLink\\Source\\RiderGameControl\\RiderGameControl.Build.cs",
+		"C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\RiderLink.Build.cs",
+		"C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Plugins\\Developer\\RiderLink\\Source\\RiderLogging\\RiderLogging.Build.cs",
+		"C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Plugins\\Developer\\RiderLink\\Source\\RiderShaderInfoDump\\RiderShaderInfoDump.Build.cs",
 		"C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKarts.Target.cs",
 		"C:\\Users\\ayrton.olivera\\Documents\\Unreal Projects\\CrazyKartsUEMultiplayer\\CrazyKarts\\Source\\CrazyKartsEditor.Target.cs"
 	],
