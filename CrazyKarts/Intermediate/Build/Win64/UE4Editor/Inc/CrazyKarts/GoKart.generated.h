@@ -65,9 +65,7 @@ public: \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
 		ServerState=NETFIELD_REP_START, \
-		Throttle, \
-		SteeringThrow, \
-		NETFIELD_REP_END=SteeringThrow	}; \
+		NETFIELD_REP_END=ServerState	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
@@ -83,9 +81,7 @@ public: \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
 		ServerState=NETFIELD_REP_START, \
-		Throttle, \
-		SteeringThrow, \
-		NETFIELD_REP_END=SteeringThrow	}; \
+		NETFIELD_REP_END=ServerState	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
@@ -119,9 +115,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__DragCoefficient() { return STRUCT_OFFSET(AGoKart, DragCoefficient); } \
 	FORCEINLINE static uint32 __PPO__RollingResistanceCoefficient() { return STRUCT_OFFSET(AGoKart, RollingResistanceCoefficient); } \
 	FORCEINLINE static uint32 __PPO__MinimumTurningRadius() { return STRUCT_OFFSET(AGoKart, MinimumTurningRadius); } \
-	FORCEINLINE static uint32 __PPO__ServerState() { return STRUCT_OFFSET(AGoKart, ServerState); } \
-	FORCEINLINE static uint32 __PPO__Throttle() { return STRUCT_OFFSET(AGoKart, Throttle); } \
-	FORCEINLINE static uint32 __PPO__SteeringThrow() { return STRUCT_OFFSET(AGoKart, SteeringThrow); }
+	FORCEINLINE static uint32 __PPO__ServerState() { return STRUCT_OFFSET(AGoKart, ServerState); }
 
 
 #define CrazyKarts_Source_CrazyKarts_GoKart_h_39_PROLOG \

@@ -93,20 +93,24 @@ private:
 
 	FVector Velocity;
 
-	UPROPERTY(Replicated)
 	float Throttle;
 
-	UPROPERTY(Replicated)
 	float SteeringThrow;
+
+	TArray<FGoKartMove> UnacknowledgedMoves;
 
 
 	// Subroutines //
 	// =========== //
+	FGoKartMove CreateMove(float DeltaTime);
+
+	void ClearAcknowledgedMoves(FGoKartMove LastMove);
+
 	FVector GetAirResistance();
 
 	FVector GetRollingResistance();
 
-	void ApplyRotation(float DeltaTime);
+	void ApplyRotation(float DeltaTime, float InSteeringThrow);
 
 	void MoveForward(float Axis);
 
@@ -114,6 +118,8 @@ private:
 
 	UFUNCTION(Server, Reliable, WithValidation)
 	void Server_SendMove(FGoKartMove Move);
+
+	void SimulateMove(FGoKartMove Move);
 
 	void UpdateLocationFromVelocity(float DeltaTime);
 };

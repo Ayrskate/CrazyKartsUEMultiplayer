@@ -362,14 +362,6 @@ static struct FScriptStruct_CrazyKarts_StaticRegisterNativesFGoKartMove
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ServerState_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ServerState;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Throttle_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Throttle;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SteeringThrow_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SteeringThrow;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -440,18 +432,6 @@ static struct FScriptStruct_CrazyKarts_StaticRegisterNativesFGoKartMove
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AGoKart_Statics::NewProp_ServerState = { "ServerState", "OnRep_ServerState", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGoKart, ServerState), Z_Construct_UScriptStruct_FGoKartState, METADATA_PARAMS(Z_Construct_UClass_AGoKart_Statics::NewProp_ServerState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGoKart_Statics::NewProp_ServerState_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGoKart_Statics::NewProp_Throttle_MetaData[] = {
-		{ "ModuleRelativePath", "GoKart.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AGoKart_Statics::NewProp_Throttle = { "Throttle", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGoKart, Throttle), METADATA_PARAMS(Z_Construct_UClass_AGoKart_Statics::NewProp_Throttle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGoKart_Statics::NewProp_Throttle_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGoKart_Statics::NewProp_SteeringThrow_MetaData[] = {
-		{ "ModuleRelativePath", "GoKart.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AGoKart_Statics::NewProp_SteeringThrow = { "SteeringThrow", nullptr, (EPropertyFlags)0x0040000000000020, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGoKart, SteeringThrow), METADATA_PARAMS(Z_Construct_UClass_AGoKart_Statics::NewProp_SteeringThrow_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGoKart_Statics::NewProp_SteeringThrow_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGoKart_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGoKart_Statics::NewProp_Mass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGoKart_Statics::NewProp_MaxDrivingForce,
@@ -459,8 +439,6 @@ static struct FScriptStruct_CrazyKarts_StaticRegisterNativesFGoKartMove
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGoKart_Statics::NewProp_RollingResistanceCoefficient,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGoKart_Statics::NewProp_MinimumTurningRadius,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGoKart_Statics::NewProp_ServerState,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGoKart_Statics::NewProp_Throttle,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGoKart_Statics::NewProp_SteeringThrow,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AGoKart_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AGoKart>::IsAbstract,
@@ -489,7 +467,7 @@ static struct FScriptStruct_CrazyKarts_StaticRegisterNativesFGoKartMove
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGoKart, 910426046);
+	IMPLEMENT_CLASS(AGoKart, 1627841146);
 	template<> CRAZYKARTS_API UClass* StaticClass<AGoKart>()
 	{
 		return AGoKart::StaticClass();
@@ -499,13 +477,9 @@ static struct FScriptStruct_CrazyKarts_StaticRegisterNativesFGoKartMove
 	void AGoKart::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const
 	{
 		static const FName Name_ServerState(TEXT("ServerState"));
-		static const FName Name_Throttle(TEXT("Throttle"));
-		static const FName Name_SteeringThrow(TEXT("SteeringThrow"));
 
 		const bool bIsValid = true
-			&& Name_ServerState == ClassReps[(int32)ENetFields_Private::ServerState].Property->GetFName()
-			&& Name_Throttle == ClassReps[(int32)ENetFields_Private::Throttle].Property->GetFName()
-			&& Name_SteeringThrow == ClassReps[(int32)ENetFields_Private::SteeringThrow].Property->GetFName();
+			&& Name_ServerState == ClassReps[(int32)ENetFields_Private::ServerState].Property->GetFName();
 
 		checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in AGoKart"));
 	}
