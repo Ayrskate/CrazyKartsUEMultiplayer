@@ -1,25 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GoKartMovementComponent.h"
 #include "GameFramework/Pawn.h"
 #include "GoKart.generated.h"
-
-USTRUCT()
-struct FGoKartMove
-{
-	GENERATED_BODY()
-
-	UPROPERTY()
-	float Throttle;
-
-	UPROPERTY()
-	float SteeringThrow;
-
-	UPROPERTY()
-	float DeltaTime;
-
-	UPROPERTY()
-	float Time;
-};
 
 USTRUCT()
 struct FGoKartState
@@ -41,46 +24,15 @@ class CRAZYKARTS_API AGoKart : public APawn
 {
 	GENERATED_BODY()
 
-	// Configuration //
-	// ============= //
-	// Kg
-	UPROPERTY(EditAnywhere, category = "Kart Parameters")
-	float Mass = 1000;
-
-	// Newtons
-	UPROPERTY(EditAnywhere, category = "Kart Parameters")
-	float MaxDrivingForce = 10000;
-
-	// Kg * m
-	UPROPERTY(EditAnywhere, category = "Kart Parameters")
-	float DragCoefficient = 16.0f;
-
-	// Higher means more rolling resistance
-	UPROPERTY(EditAnywhere, category = "Kart Parameters")
-	float RollingResistanceCoefficient = 0.015f;
-
-	// Meters
-	UPROPERTY(EditAnywhere, category = "Kart Parameters")
-	float MinimumTurningRadius = 10.0f;
-
-
 	// Lifecycle //
 	// ========= //
 public:
-	// Sets default values for this pawn's properties
 	AGoKart();
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-public:
-	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+protected:
+	virtual void BeginPlay() override;
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	// State //
 	// ===== //
@@ -91,35 +43,23 @@ private:
 	UFUNCTION()
 	void OnRep_ServerState();
 
-	FVector Velocity;
-
-	float Throttle;
-
-	float SteeringThrow;
-
 	TArray<FGoKartMove> UnacknowledgedMoves;
+
+	// Subobjects //
+	// ========== //
+private:
+	UPROPERTY(EditAnywhere)
+	UGoKartMovementComponent* MovementComponent;
 
 
 	// Subroutines //
 	// =========== //
-	FGoKartMove CreateMove(float DeltaTime);
-
-	void ClearAcknowledgedMoves(FGoKartMove LastMove);
-
-	FVector GetAirResistance();
-
-	FVector GetRollingResistance();
-
-	void ApplyRotation(float DeltaTime, float InSteeringThrow);
-
 	void MoveForward(float Axis);
 
 	void MoveRight(float Axis);
 
+	void ClearAcknowledgedMoves(FGoKartMove LastMove);
+
 	UFUNCTION(Server, Reliable, WithValidation)
 	void Server_SendMove(FGoKartMove Move);
-
-	void SimulateMove(FGoKartMove Move);
-
-	void UpdateLocationFromVelocity(float DeltaTime);
 };
