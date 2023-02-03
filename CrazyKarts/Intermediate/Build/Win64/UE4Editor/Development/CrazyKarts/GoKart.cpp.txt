@@ -2,6 +2,8 @@ C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyK
 C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyKarts\Source\CrazyKarts\GoKart.h
 C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyKarts\Source\CrazyKarts\GoKartMovementComponent.h
 C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Inc\CrazyKarts\GoKartMovementComponent.generated.h
+C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyKarts\Source\CrazyKarts\GoKartReplicationComponent.h
+C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Inc\CrazyKarts\GoKartReplicationComponent.generated.h
 C:\Users\ayrton.olivera\Documents\Unreal Projects\CrazyKartsUEMultiplayer\CrazyKarts\Intermediate\Build\Win64\UE4Editor\Inc\CrazyKarts\GoKart.generated.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameStateBase.h

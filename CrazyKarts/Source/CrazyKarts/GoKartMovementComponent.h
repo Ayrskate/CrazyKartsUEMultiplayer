@@ -58,6 +58,14 @@ private:
 
 	float SteeringThrow;
 
+	FGoKartMove LastMove;
+
+	// Accessors //
+	// ========= //
+public:
+	FVector GetVelocity() const { return Velocity; }
+	FGoKartMove GetLastMove() const { return LastMove; }
+
 	// Lifecycle //
 	// ========= //
 public:
@@ -66,12 +74,6 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
-	// Accessors //
-	// ========= //
-public:
-	FVector GetVelocity() const { return Velocity; }
-
-
 	// Methods //
 	// ======= //
 public:
@@ -79,11 +81,12 @@ public:
 	void SetSteeringThrow(float Axis);
 	void SetVelocity(FVector NewVelocity);
 	void SimulateMove(const FGoKartMove& Move);
-	FGoKartMove CreateMove(float DeltaTime);
 
 	// Subroutines //
 	// =========== //
 private:
+	FGoKartMove CreateMove(float DeltaTime);
+
 	FVector GetAirResistance();
 
 	FVector GetRollingResistance();
