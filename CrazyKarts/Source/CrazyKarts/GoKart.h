@@ -27,11 +27,11 @@ private:
 
 	// Subobjects //
 	// ========== //
-private:
-	UPROPERTY(VisibleAnywhere)
+public:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	UGoKartMovementComponent* MovementComponent;
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	UGoKartReplicationComponent* ReplicationComponent;
 
 

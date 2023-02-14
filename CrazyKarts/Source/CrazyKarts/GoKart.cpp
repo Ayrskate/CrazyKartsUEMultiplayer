@@ -30,7 +30,7 @@ void AGoKart::BeginPlay()
 
 	if (HasAuthority())
 	{
-		NetUpdateFrequency = 1;
+		NetUpdateFrequency = 10;
 		SetReplicateMovement(false);
 	}
 }

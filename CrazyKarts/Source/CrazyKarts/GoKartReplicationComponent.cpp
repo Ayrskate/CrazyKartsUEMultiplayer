@@ -4,7 +4,7 @@
 UGoKartReplicationComponent::UGoKartReplicationComponent()
 {
 	PrimaryComponentTick.bCanEverTick = true;
-	SetIsReplicated(true);
+	SetIsReplicatedByDefault(true);
 }
 
 void UGoKartReplicationComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
@@ -50,14 +50,28 @@ void UGoKartReplicationComponent::TickComponent(float DeltaTime, ELevelTick Tick
 
 void UGoKartReplicationComponent::Server_SendMove_Implementation(FGoKartMove Move)
 {
+	ClientSimulatedTime += Move.DeltaTime;
 	MovementComponent->SimulateMove(Move);
 	UpdateServerState(Move);
 }
 
 bool UGoKartReplicationComponent::Server_SendMove_Validate(FGoKartMove Move)
 {
+	float ProposedTime = ClientSimulatedTime + Move.DeltaTime;
+	bool ClientNotRunningAhead = ProposedTime < GetWorld()->TimeSeconds;
+	if (!ClientNotRunningAhead)
+	{
+		UE_LOG(LogTemp, Error, TEXT("Client is going too fast"));
+		return false;
+	}
+
+	if (!Move.IsValid())
+	{
+		UE_LOG(LogTemp, Error, TEXT("Received invalid move"));
+		return false;
+	}
+
 	return true;
-	/// TODO: make better validation
 }
 
 void UGoKartReplicationComponent::ClearAcknowledgedMoves(FGoKartMove LastMove)
@@ -85,30 +99,61 @@ void UGoKartReplicationComponent::ClientTick(float DeltaTime)
 	ClientTimeSinceUpdate += DeltaTime;
 
 	if (ClientTimeBetweenLastUpdates < KINDA_SMALL_NUMBER) return; // XD
+	if (!IsValid(MovementComponent)) return;
 
 	float LerpRatio = ClientTimeSinceUpdate / ClientTimeBetweenLastUpdates;
+	FHermiteCubicSpline Spline = CreateSpline();
 
 	// Location
-	FVector TargetLocation = ServerState.Transform.GetLocation();
-	FVector StartLocation = ClientStartTransform.GetLocation();
+	InterpolateLocation(LerpRatio, Spline);
 
-	FVector StartDerivative = ClientStartVelocity;
-	float VelocityToDerivative = ClientTimeBetweenLastUpdates * 100;
-	FVector TargetDerivative = ServerState.Velocity * VelocityToDerivative;
-	FVector NewLocation = FMath::CubicInterp(StartLocation, StartDerivative, TargetLocation, TargetDerivative, LerpRatio);
-	GetOwner()->SetActorLocation(NewLocation);
-
+	// Velocity
+	InterpolateVelocity(LerpRatio, Spline);
 
 	// Rotation
+	InterpolateRotation(LerpRatio);
+}
+
+void UGoKartReplicationComponent::InterpolateLocation(float LerpRatio, const FHermiteCubicSpline& Spline)
+{
+	FVector NewLocation = Spline.InterpolateLocation(LerpRatio);
+	if (IsValid(MeshOffsetRoot))
+	{
+		MeshOffsetRoot->SetWorldLocation(NewLocation);
+	}
+}
+
+void UGoKartReplicationComponent::InterpolateVelocity(float LerpRatio, const FHermiteCubicSpline& Spline)
+{
+	FVector NewDerivative = Spline.InterpolateDerivative(LerpRatio);
+	FVector NewVelocity = NewDerivative / VelocityToDerivative();
+	MovementComponent->SetVelocity(NewVelocity);
+}
+
+void UGoKartReplicationComponent::InterpolateRotation(float LerpRatio)
+{
 	FQuat TargetRotation = ServerState.Transform.GetRotation();
 	FQuat StartRotation = ClientStartTransform.GetRotation();
 	FQuat NewRotation = FQuat::Slerp(StartRotation, TargetRotation, LerpRatio);
-	GetOwner()->SetActorRotation(NewRotation);
+	if (IsValid(MeshOffsetRoot))
+	{
+		MeshOffsetRoot->SetWorldRotation(NewRotation);
+	}
+}
 
-	// Velocity
-	FVector NewDerivative = FMath::CubicInterpDerivative(StartLocation, StartDerivative, TargetLocation, TargetDerivative, LerpRatio);
-	FVector NewVelocity = NewDerivative / VelocityToDerivative;
-	MovementComponent->SetVelocity(NewVelocity);
+FHermiteCubicSpline UGoKartReplicationComponent::CreateSpline()
+{
+	FHermiteCubicSpline Spline;
+	Spline.TargetLocation = ServerState.Transform.GetLocation();
+	Spline.StartLocation = ClientStartTransform.GetLocation();
+	Spline.StartDerivative = ClientStartVelocity * VelocityToDerivative();
+	Spline.TargetDerivative = ServerState.Velocity * VelocityToDerivative();
+	return Spline;
+}
+
+float UGoKartReplicationComponent::VelocityToDerivative()
+{
+	return ClientTimeBetweenLastUpdates * 100;
 }
 
 void UGoKartReplicationComponent::OnRep_ServerState()
@@ -134,8 +179,16 @@ void UGoKartReplicationComponent::SimulatedProxy_OnRep_ServerState()
 
 	ClientTimeBetweenLastUpdates = ClientTimeSinceUpdate;
 	ClientTimeSinceUpdate = 0;
-	ClientStartTransform = GetOwner()->GetActorTransform();
+
+	if (IsValid(MeshOffsetRoot))
+	{
+		ClientStartTransform.SetLocation(MeshOffsetRoot->GetComponentLocation());
+		ClientStartTransform.SetRotation(MeshOffsetRoot->GetComponentQuat());
+	}
 	ClientStartVelocity = MovementComponent->GetVelocity();
+
+	// Move the actual actor to the position, only the MeshOffsetRoot is moving
+	GetOwner()->SetActorTransform(ServerState.Transform);
 }
 
 void UGoKartReplicationComponent::AutonomousProxy_OnRep_ServerState()

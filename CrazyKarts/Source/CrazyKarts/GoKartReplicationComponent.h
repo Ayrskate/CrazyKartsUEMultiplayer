@@ -19,6 +19,20 @@ struct FGoKartState
 	FTransform Transform;
 };
 
+struct FHermiteCubicSpline
+{
+	FVector StartLocation, StartDerivative, TargetLocation, TargetDerivative;
+
+	FVector InterpolateLocation(float LerpRatio) const
+	{
+		return FMath::CubicInterp(StartLocation, StartDerivative, TargetLocation, TargetDerivative, LerpRatio);
+	}
+	FVector InterpolateDerivative(float LerpRatio) const
+	{
+		return FMath::CubicInterpDerivative(StartLocation, StartDerivative, TargetLocation, TargetDerivative, LerpRatio);
+	}
+};
+
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class CRAZYKARTS_API UGoKartReplicationComponent : public UActorComponent
 {
@@ -48,6 +62,8 @@ private:
 
 	FVector ClientStartVelocity;
 
+	float ClientSimulatedTime;
+
 	// References //
 	// ========== //
 private:
@@ -56,6 +72,15 @@ private:
 
 	UPROPERTY()
 	UGoKartMovementComponent* MovementComponent;
+
+	UPROPERTY()
+	USceneComponent* MeshOffsetRoot;
+
+	// Methods //
+	// ======= //
+public:
+	UFUNCTION(BlueprintCallable)
+	void SetMeshOffsetRoot(USceneComponent* Root) { MeshOffsetRoot = Root; }
 
 	// Subroutines //
 	// =========== //
@@ -68,6 +93,16 @@ private:
 	void UpdateServerState(const FGoKartMove& Move);
 
 	void ClientTick(float DeltaTime);
+
+	FHermiteCubicSpline CreateSpline();
+
+	void InterpolateLocation(float LerpRatio, const FHermiteCubicSpline& Spline);
+
+	void InterpolateVelocity(float LerpRatio, const FHermiteCubicSpline& Spline);
+
+	void InterpolateRotation(float LerpRatio);
+
+	float VelocityToDerivative();
 
 	// Event Response //
 	// ============== //
